@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="modal hidden">
+        <h2><img src="/assets/images/icon-success-check.svg">Message Sent!</h2>
+        <p>Thanks for completing the form. We'll be in touch soon! </p>
+      </div>
+      <div class="form-card">
+        <h1><b>Contact Us</b></h1>
+        <form id="contact-form" >
+           <div class="form-body">
+            <div class="name-group">
+              <div class="element-group">
+                <label for="fname">First Name<span class="required">*</span></label>
+                <input type="text" name="fname">
+              </div>
+              <div class="element-group">
+                <label for="lname">Last Name<span class="required">*</span></label>
+                <input type="text" name="lname">
+              </div>
+            </div>
+            <div class="element-group">
+              <label for="email">Email Address<span class="required">*</span></label>
+              <input text="email" name="email">
+            </div>
+            <div class="element-group">
+              <label for="query">Query Type<span class="required">*</span></label>
+              <div class="radio-group">
+                <div class="radio-container">
+                  <div class="queryInput"><input type="radio" value="Support Request" name="queryType" value="support-request"></div>
+                  <div class="queryLabel" ><label>General Query</label></div>
+                </div>
+                <div class="radio-container">
+                  <div class="queryInput"><input type="radio" value="Support Request" name="queryType" value="support-request"></div>
+                  <div class="queryLabel"><label>Support Request</label></div>
+                </div>
+              </div>
+            </div>
+            <div class="element-group"  >
+              <label for="message">Message<span class="required">*</span></label><br>
+              <textarea name="message" rows="7"></textarea>
+            </div>
+            <div class="element-group">
+              <div class="consent-container">
+                <div style="margin-top: 1px;"><input type="checkbox" name="consent"></div>
+                <div><label for="consent">I hereby consent to being contacted by team<span class="required">*</span></label></div>
+              </div>
+            </div>
+           
+            <div>
+              <input type="submit">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="attribution">
+        <div>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+          Coded by <a href="#">Roy Kiprop</a>.
+        </div>
+      </div>
+     
+  
+    </div>
+   
+    
+  </main>
+</body>
+</html>
